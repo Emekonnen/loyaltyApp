@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,7 +7,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JuiceCardViewController" customModule="Workshop17" customModuleProvider="target">
             <connections>
+                <outlet property="freeJuice" destination="MKy-Ee-dCn" id="tDp-9r-ada"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="juiceButtons" destination="0y9-Bf-SYd" collectionClass="NSMutableArray" id="i39-Fr-bzN"/>
+                <outletCollection property="juiceButtons" destination="sHO-KQ-wVN" collectionClass="NSMutableArray" id="BpE-XR-J0b"/>
+                <outletCollection property="juiceButtons" destination="08x-el-rTO" collectionClass="NSMutableArray" id="ffS-JJ-fGE"/>
+                <outletCollection property="juiceButtons" destination="hYE-nY-qaR" collectionClass="NSMutableArray" id="d7M-Qu-sOu"/>
+                <outletCollection property="juiceButtons" destination="08x-el-rTO" collectionClass="NSMutableArray" id="LdY-e8-eNk"/>
+                <outletCollection property="juiceButtons" destination="gH1-vH-5df" collectionClass="NSMutableArray" id="yrV-Iv-fCq"/>
+                <outletCollection property="juiceButtons" destination="V0g-fP-4PX" collectionClass="NSMutableArray" id="Vbf-6o-U2y"/>
+                <outletCollection property="juiceButtons" destination="UME-i3-UAQ" collectionClass="NSMutableArray" id="n3z-iC-2mG"/>
+                <outletCollection property="juiceButtons" destination="jdf-d7-XjQ" collectionClass="NSMutableArray" id="6pQ-8z-k6t"/>
+                <outletCollection property="juiceButtons" destination="9cZ-8u-v8t" collectionClass="NSMutableArray" id="dYy-zh-U7P"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,70 +29,70 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="juice background" translatesAutoresizingMaskIntoConstraints="NO" id="1Dk-Ng-HmB">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UME-i3-UAQ">
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UME-i3-UAQ">
                     <rect key="frame" x="69" y="355" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="RiS-Mp-ZWK"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-d7-XjQ">
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-d7-XjQ">
                     <rect key="frame" x="69" y="437" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="txK-UO-7MY"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-fP-4PX">
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-fP-4PX">
                     <rect key="frame" x="175" y="278" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="V7u-bf-A28"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH1-vH-5df">
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH1-vH-5df">
                     <rect key="frame" x="69" y="278" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="0Ia-6b-a3I"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08x-el-rTO">
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08x-el-rTO">
                     <rect key="frame" x="175" y="201" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="5VW-7Y-5iM"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHO-KQ-wVN">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHO-KQ-wVN">
                     <rect key="frame" x="175" y="124" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="OKQ-xA-U8x"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-nY-qaR">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYE-nY-qaR">
                     <rect key="frame" x="69" y="201" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="Hzz-OZ-F35"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y9-Bf-SYd">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y9-Bf-SYd">
                     <rect key="frame" x="69" y="124" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="xpC-5J-vxm"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cZ-8u-v8t">
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cZ-8u-v8t">
                     <rect key="frame" x="175" y="355" width="88" height="69"/>
                     <state key="normal" image="juice card"/>
                     <connections>
                         <action selector="juiceButtonsPressed:" destination="-1" eventType="touchUpInside" id="9n9-KX-gsP"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKy-Ee-dCn">
+                <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKy-Ee-dCn">
                     <rect key="frame" x="175" y="432" width="88" height="74"/>
                     <state key="normal" title="FREE" image="free juice"/>
                     <connections>

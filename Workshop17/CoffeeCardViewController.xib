@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -7,7 +7,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoffeeCardViewController" customModule="Workshop17" customModuleProvider="target">
             <connections>
+                <outlet property="freeCoffee" destination="6wc-G3-Y0o" id="rxw-Kf-Y2z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="coffeeButtons" destination="YTY-gn-BiQ" collectionClass="NSMutableArray" id="PTE-gZ-lF7"/>
+                <outletCollection property="coffeeButtons" destination="wdS-AP-U0g" collectionClass="NSMutableArray" id="wG4-pD-vdG"/>
+                <outletCollection property="coffeeButtons" destination="kLj-d7-zpT" collectionClass="NSMutableArray" id="ecJ-dz-u1c"/>
+                <outletCollection property="coffeeButtons" destination="hqF-xK-4iy" collectionClass="NSMutableArray" id="a1F-2s-i2i"/>
+                <outletCollection property="coffeeButtons" destination="rNJ-GX-okH" collectionClass="NSMutableArray" id="PHB-40-8yt"/>
+                <outletCollection property="coffeeButtons" destination="MVZ-b7-OYd" collectionClass="NSMutableArray" id="3OQ-5l-aG8"/>
+                <outletCollection property="coffeeButtons" destination="3Kh-aE-Ogc" collectionClass="NSMutableArray" id="dfb-kS-Ucl"/>
+                <outletCollection property="coffeeButtons" destination="ppS-za-BQe" collectionClass="NSMutableArray" id="GbO-Hy-tna"/>
+                <outletCollection property="coffeeButtons" destination="Bt1-VR-DbA" collectionClass="NSMutableArray" id="cQd-yt-pLt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,70 +28,70 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-17-adz">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="672"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVZ-b7-OYd">
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVZ-b7-OYd">
                     <rect key="frame" x="169" y="280" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="k7r-5o-cKK"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-xK-4iy">
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqF-xK-4iy">
                     <rect key="frame" x="177" y="203" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="ZHB-rg-SgF"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bt1-VR-DbA">
+                <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bt1-VR-DbA">
                     <rect key="frame" x="73" y="434" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="40n-Pu-SL3"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-AP-U0g">
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdS-AP-U0g">
                     <rect key="frame" x="177" y="121" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="WOz-iI-O6G"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppS-za-BQe">
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppS-za-BQe">
                     <rect key="frame" x="73" y="357" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="BkH-3s-2TV"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-GX-okH">
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNJ-GX-okH">
                     <rect key="frame" x="73" y="280" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="i8u-6g-Etu"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLj-d7-zpT">
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLj-d7-zpT">
                     <rect key="frame" x="73" y="203" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="kOP-4W-C4q"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTY-gn-BiQ">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTY-gn-BiQ">
                     <rect key="frame" x="73" y="121" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="aJo-0h-1JR"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kh-aE-Ogc">
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kh-aE-Ogc">
                     <rect key="frame" x="169" y="357" width="88" height="69"/>
                     <state key="normal" image="coffee card"/>
                     <connections>
                         <action selector="coffeeButtonsPressed:" destination="-1" eventType="touchUpInside" id="oAB-1n-c4d"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wc-G3-Y0o">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6wc-G3-Y0o">
                     <rect key="frame" x="169" y="434" width="88" height="69"/>
                     <state key="normal" image="free coffee">
                         <attributedString key="attributedTitle">

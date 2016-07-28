@@ -10,6 +10,19 @@ import UIKit
 
 class CoffeeCompViewController: UIViewController {
 
+    @IBOutlet var coffeesBought: UILabel!
+    
+    @IBOutlet var coffeesBoughtToday: UITextField!
+    
+    @IBOutlet var coffeesBoughtThisWeek: UITextField!
+    
+    @IBOutlet var coffeesBoughtThisMonth: UITextField!
+    
+    @IBAction func Refresh(sender: AnyObject) {
+      coffeesBoughtToday.clearButtonMode = .Always
+      coffeesBoughtThisWeek.clearButtonMode = .Always
+      coffeesBoughtThisMonth.clearButtonMode = .Always
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

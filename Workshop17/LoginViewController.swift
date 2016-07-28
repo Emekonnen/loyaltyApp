@@ -13,13 +13,14 @@ import SwiftyJSON
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var passwordField: UITextField!
+    
     @IBOutlet var emailField: UITextField!
     
-   
     var window: UIWindow?
     
     let appdelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var data : NSMutableData = NSMutableData()
+    
     @IBAction func loginButtonTapped(sender: AnyObject) {
         let email = self.emailField.text!
         let password = self.passwordField.text!
@@ -39,8 +40,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let task = session.dataTaskWithURL(url) {
             (let data, let response, let error) in
             if let httpResponse = response as? NSHTTPURLResponse {
-                let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-                print(dataString)
+                
+                do {
+                    
+                    let drinkData = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as! [String:AnyObject]
+                    print(drinkData)
+                    NSUserDefaults.standardUserDefaults().setObject(drinkData, forKey: "DrinkData")
+                    
+                } catch let error as NSError {
+                    
+                    print("Error: \(error.localizedDescription)")
+                }
+                //let dataString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                //print(dataString)
+                
+                
             }
             running = false
         }
@@ -53,16 +67,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             sleep(1)
         }
     }
-    
-    func connection(connection: NSURLConnection!, didFailWithError error: NSError!) {
-        NSLog("Error \(error.localizedDescription)")
-    }
-    
+
     func connection(didRecieveResponse: NSURLConnection!, didRecieveResponse response: NSURLResponse) {
         self.data = NSMutableData()
         NSLog("Reset data")
     }
-    
+
     func connection(connection: NSURLConnection!, didReceive data: NSData!) {
         self.data.appendData(data)
         NSLog("Part \(self.data)")
@@ -73,16 +83,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailField.delegate = self
-        passwordField.delegate = self
-        
+        self.title = "Login"
     }
     
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    }
     /*
     // MARK: - Navigation
 
@@ -92,4 +100,3 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-}

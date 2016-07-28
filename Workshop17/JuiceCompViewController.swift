@@ -10,6 +10,20 @@ import UIKit
 
 class JuiceCompViewController: UIViewController {
 
+    @IBOutlet var juicesBought: UILabel!
+    
+    @IBOutlet var juicesBoughtToday: UITextField!
+    
+    @IBOutlet var juicesBoughtThisWeek: UITextField!
+    
+    @IBOutlet var juicesBoughtThisMonth: UITextField!
+    
+    @IBAction func Refresh(sender: AnyObject) {
+        juicesBoughtToday.clearButtonMode = .Always
+        juicesBoughtThisWeek.clearButtonMode = .Always
+        juicesBoughtThisMonth.clearButtonMode = .Always
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

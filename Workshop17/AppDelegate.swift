@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var tabBarController = UITabBarController()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+        
         let welcomeVC = WelcomeViewController(nibName:"WelcomeViewController",bundle:nil)
         welcomeVC.tabBarItem.title = "Home"
         welcomeVC.tabBarItem.image = UIImage(named:"home")
@@ -54,18 +55,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.makeKeyAndVisible()
         
-        
-        
-        
-        return true
-        
-
-        
+//        let standardDefaults = NSUserDefaults.standardUserDefaults()
+//        standardDefaults.registerDefaults(["coffee" : 2])
+//        
+//        var coffee = standardDefaults.integerForKey("coffee")
+//        print("coffee is\(coffee)")
+//        
+//        standardDefaults.setValue(3,forKey:"coffee")
+//        
+//        coffee = standardDefaults.integerForKey("coffee")
+//        print("coffee is\(free)")
+       return true
         
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
-    }
+        
+        }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -73,8 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -86,10 +90,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:
+        }
+
     }
-
-
-}
-
+        
 }

@@ -8,33 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		6FF48629919198B452FB2787 /* Pods_Workshop17.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AEC7B15C100689A2A96496 /* Pods_Workshop17.framework */; };
-		F20C33EF1D38E6E60055F202 /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C33EE1D38E6E60055F202 /* UserObject.swift */; };
-		F20C33F21D3921980055F202 /* JuiceCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C33F01D3921980055F202 /* JuiceCompViewController.swift */; };
-		F20C33F31D3921980055F202 /* JuiceCompViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20C33F11D3921980055F202 /* JuiceCompViewController.xib */; };
-		F20C33F61D3921A60055F202 /* CoffeeCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C33F41D3921A60055F202 /* CoffeeCompViewController.swift */; };
-		F20C33F71D3921A60055F202 /* CoffeeCompViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20C33F51D3921A60055F202 /* CoffeeCompViewController.xib */; };
+		F206EAF91D4A62F700E39E66 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F206EAF81D4A62F700E39E66 /* UserController.swift */; };
+		F23A9EB21D3FB8DA0096191B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F80161D338DE000A7D146 /* AppDelegate.swift */; };
 		F2515FF81D33CC9E005B3E18 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2515FF61D33CC9E005B3E18 /* WelcomeViewController.swift */; };
 		F2515FF91D33CC9E005B3E18 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2515FF71D33CC9E005B3E18 /* WelcomeViewController.xib */; };
 		F2515FFC1D33CCAF005B3E18 /* CoffeeCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2515FFA1D33CCAF005B3E18 /* CoffeeCardViewController.swift */; };
 		F2515FFD1D33CCAF005B3E18 /* CoffeeCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2515FFB1D33CCAF005B3E18 /* CoffeeCardViewController.xib */; };
 		F25160021D33CCD2005B3E18 /* JuiceCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25160001D33CCD2005B3E18 /* JuiceCardViewController.swift */; };
 		F25160031D33CCD2005B3E18 /* JuiceCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25160011D33CCD2005B3E18 /* JuiceCardViewController.xib */; };
-		F27F80171D338DE000A7D146 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F80161D338DE000A7D146 /* AppDelegate.swift */; };
 		F27F801E1D338DE000A7D146 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27F801D1D338DE000A7D146 /* Assets.xcassets */; };
 		F27F80211D338DE000A7D146 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27F801F1D338DE000A7D146 /* LaunchScreen.storyboard */; };
 		F27F802F1D338EB200A7D146 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F802D1D338EB200A7D146 /* LoginViewController.swift */; };
 		F27F80301D338EB200A7D146 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F27F802E1D338EB200A7D146 /* LoginViewController.xib */; };
+		F2A27FCE1D4A2921004B7E0C /* EmailValidatedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A27FCD1D4A2921004B7E0C /* EmailValidatedTextField.swift */; };
+		F2C2323D1D3F9119002EBAE8 /* CoffeeCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2323B1D3F9119002EBAE8 /* CoffeeCompViewController.swift */; };
+		F2C2323E1D3F9119002EBAE8 /* CoffeeCompViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C2323C1D3F9119002EBAE8 /* CoffeeCompViewController.xib */; };
+		F2C232411D3F912C002EBAE8 /* JuiceCompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C2323F1D3F912C002EBAE8 /* JuiceCompViewController.swift */; };
+		F2C232421D3F912C002EBAE8 /* JuiceCompViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C232401D3F912C002EBAE8 /* JuiceCompViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B000C384BDECBAE8C80B9E0 /* Pods-Workshop17.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop17.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop17/Pods-Workshop17.debug.xcconfig"; sourceTree = "<group>"; };
 		43AEC7B15C100689A2A96496 /* Pods_Workshop17.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workshop17.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C481108E5C6A381900EECC51 /* Pods-Workshop17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop17.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop17/Pods-Workshop17.release.xcconfig"; sourceTree = "<group>"; };
-		F20C33EE1D38E6E60055F202 /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
-		F20C33F01D3921980055F202 /* JuiceCompViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceCompViewController.swift; sourceTree = "<group>"; };
-		F20C33F11D3921980055F202 /* JuiceCompViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JuiceCompViewController.xib; sourceTree = "<group>"; };
-		F20C33F41D3921A60055F202 /* CoffeeCompViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCompViewController.swift; sourceTree = "<group>"; };
-		F20C33F51D3921A60055F202 /* CoffeeCompViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoffeeCompViewController.xib; sourceTree = "<group>"; };
+		F206EAF81D4A62F700E39E66 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		F2515FF61D33CC9E005B3E18 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F2515FF71D33CC9E005B3E18 /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		F2515FFA1D33CCAF005B3E18 /* CoffeeCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCardViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +45,11 @@
 		F27F80221D338DE000A7D146 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F27F802D1D338EB200A7D146 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F27F802E1D338EB200A7D146 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F2A27FCD1D4A2921004B7E0C /* EmailValidatedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatedTextField.swift; sourceTree = "<group>"; };
+		F2C2323B1D3F9119002EBAE8 /* CoffeeCompViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeCompViewController.swift; sourceTree = "<group>"; };
+		F2C2323C1D3F9119002EBAE8 /* CoffeeCompViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoffeeCompViewController.xib; sourceTree = "<group>"; };
+		F2C2323F1D3F912C002EBAE8 /* JuiceCompViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuiceCompViewController.swift; sourceTree = "<group>"; };
+		F2C232401D3F912C002EBAE8 /* JuiceCompViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JuiceCompViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,17 +108,18 @@
 				F27F801F1D338DE000A7D146 /* LaunchScreen.storyboard */,
 				F27F802D1D338EB200A7D146 /* LoginViewController.swift */,
 				F27F802E1D338EB200A7D146 /* LoginViewController.xib */,
-				F20C33EE1D38E6E60055F202 /* UserObject.swift */,
+				F2A27FCD1D4A2921004B7E0C /* EmailValidatedTextField.swift */,
 				F2515FF61D33CC9E005B3E18 /* WelcomeViewController.swift */,
 				F2515FF71D33CC9E005B3E18 /* WelcomeViewController.xib */,
 				F2515FFA1D33CCAF005B3E18 /* CoffeeCardViewController.swift */,
 				F2515FFB1D33CCAF005B3E18 /* CoffeeCardViewController.xib */,
 				F25160001D33CCD2005B3E18 /* JuiceCardViewController.swift */,
 				F25160011D33CCD2005B3E18 /* JuiceCardViewController.xib */,
-				F20C33F41D3921A60055F202 /* CoffeeCompViewController.swift */,
-				F20C33F51D3921A60055F202 /* CoffeeCompViewController.xib */,
-				F20C33F01D3921980055F202 /* JuiceCompViewController.swift */,
-				F20C33F11D3921980055F202 /* JuiceCompViewController.xib */,
+				F2C2323B1D3F9119002EBAE8 /* CoffeeCompViewController.swift */,
+				F2C2323C1D3F9119002EBAE8 /* CoffeeCompViewController.xib */,
+				F2C2323F1D3F912C002EBAE8 /* JuiceCompViewController.swift */,
+				F2C232401D3F912C002EBAE8 /* JuiceCompViewController.xib */,
+				F206EAF81D4A62F700E39E66 /* UserController.swift */,
 			);
 			path = Workshop17;
 			sourceTree = "<group>";
@@ -183,14 +186,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20C33F31D3921980055F202 /* JuiceCompViewController.xib in Resources */,
 				F2515FFD1D33CCAF005B3E18 /* CoffeeCardViewController.xib in Resources */,
 				F27F80211D338DE000A7D146 /* LaunchScreen.storyboard in Resources */,
-				F20C33F71D3921A60055F202 /* CoffeeCompViewController.xib in Resources */,
+				F2C232421D3F912C002EBAE8 /* JuiceCompViewController.xib in Resources */,
 				F2515FF91D33CC9E005B3E18 /* WelcomeViewController.xib in Resources */,
 				F27F801E1D338DE000A7D146 /* Assets.xcassets in Resources */,
 				F27F80301D338EB200A7D146 /* LoginViewController.xib in Resources */,
 				F25160031D33CCD2005B3E18 /* JuiceCardViewController.xib in Resources */,
+				F2C2323E1D3F9119002EBAE8 /* CoffeeCompViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,14 +252,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F206EAF91D4A62F700E39E66 /* UserController.swift in Sources */,
 				F2515FF81D33CC9E005B3E18 /* WelcomeViewController.swift in Sources */,
-				F20C33F21D3921980055F202 /* JuiceCompViewController.swift in Sources */,
+				F2C232411D3F912C002EBAE8 /* JuiceCompViewController.swift in Sources */,
+				F2C2323D1D3F9119002EBAE8 /* CoffeeCompViewController.swift in Sources */,
 				F27F802F1D338EB200A7D146 /* LoginViewController.swift in Sources */,
+				F23A9EB21D3FB8DA0096191B /* AppDelegate.swift in Sources */,
 				F2515FFC1D33CCAF005B3E18 /* CoffeeCardViewController.swift in Sources */,
-				F27F80171D338DE000A7D146 /* AppDelegate.swift in Sources */,
 				F25160021D33CCD2005B3E18 /* JuiceCardViewController.swift in Sources */,
-				F20C33EF1D38E6E60055F202 /* UserObject.swift in Sources */,
-				F20C33F61D3921A60055F202 /* CoffeeCompViewController.swift in Sources */,
+				F2A27FCE1D4A2921004B7E0C /* EmailValidatedTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

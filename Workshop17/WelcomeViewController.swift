@@ -10,15 +10,27 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    
+    
+    @IBOutlet var WelcomeUser: UILabel!
+   
+    @IBAction func logOutButtonTapped(sender: AnyObject) {
+    NSUserDefaults.standardUserDefaults().removeObjectForKey("DrinkData")
+    }
     let appdelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     let TabBarController = UITabBarController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let prefs: NSUserDefaults = NSUserDefaults.standardUserDefaults()
         let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
+        
+        let name:String? = ""
+        //<-- Here you should load a previously saved username
+    
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
